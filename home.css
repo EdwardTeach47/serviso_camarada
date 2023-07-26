@@ -7,7 +7,7 @@ body {
 
 .header {
   /* The image used */
-  background-image: src=("img_girl.jpg");
+  background-image: src=("./logo_img/1_20230726_134901_0000.png");
 
   /* Full height */
   height: 100%; 
