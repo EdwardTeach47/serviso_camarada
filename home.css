@@ -7,7 +7,7 @@ body {
 
 .header {
   /* The image used */
-  background-image: url("img_girl.jpg");
+  background-image: src=("img_girl.jpg");
 
   /* Full height */
   height: 100%; 
