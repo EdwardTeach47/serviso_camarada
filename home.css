@@ -6,16 +6,8 @@ body {
 }
 
 .header {
-  /* The image used */
-  background-image: src=("./logo_img/1_20230726_134901_0000.png");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+ width: 100%;
+ height: auto;
 }
 
 #navbar {
@@ -34,17 +26,18 @@ body {
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+  background-color: #FF0000;
   color: black;
 }
 
 #navbar a.active {
-  background-color: #04AA6D;
+  background-color: #FF0000;
   color: white;
 }
 
 .content {
   padding: 16px;
+  
 }
 
 .sticky {
@@ -56,4 +49,26 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
+p,ul,li{
+    font-size:30px;
+}
+h1{
+    font-size:60px;
+     text-align: center;
+}
+
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 200px;
+  right: 20px;
+  color: black;
+  padding-left: 55%;
+  padding-right: 0px;
+}
+
 </style>
