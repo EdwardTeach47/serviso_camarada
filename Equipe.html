@@ -1,1 +1,46 @@
-vv
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Serviços Camarada</title>
+  <link rel="stylesheet" type="text/css" href="pag_home.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="./logo_img/Serviço_camarada.png" width="100%" height="100%">
+</div>
+
+<div class="menu" id="menu">
+  <a href="#link1">Home</a>
+  <a href="#link2">Serviço</a>
+  <a href="#link3">Equipe</a>
+  <a href="#link4">contato</a>
+</div>
+
+<div class="content">
+  
+ 
+
+</div>
+
+<div class="footer">
+  <p>Direitos do Site ©2023</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var menu = document.getElementById("menu");
+var sticky = menu.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+menu.classList.add("sticky")
+} else {
+menu.classList.remove("sticky");
+}
+}
+</script>
+
+</body>
+</html>
