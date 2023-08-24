@@ -43,8 +43,40 @@ body {
     padding: 10px;
   }
   
-  /* Adicionando cores */
- .container {
+   main {
+    padding: 0px;
+  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #FFFFFF;
+}
+    h2 {
+        color: white;
+        text-shadow: 0 0 0.5em $neonlightblue, 0 0 1em white;
+        padding: 1em 0 0.5em 0;}
+
+    img {
+        
+        margin: 0 auto; /* Centraliza */
+        padding: 8px;
+        width: 65%;
+        height: 65%;
+        display: flex;
+        justify-content: center;
+        }
+    p {
+        color: #FFFFFF;
+    }
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  .container {
     display: flex;
     flex-wrap: wrap;
   }
