@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços Camarada</title>
+  <link rel="stylesheet" type="text/css" href="serviço.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="./logo_img/Serviço_camarada.png" width="100%" height="100%">
+</div>
+
+<div class="menu" id="menu">
+  <a href="./pag_home.html">Home</a>
+  <a href="#link2">Serviço</a>
+  <a href="./Equipe.html">Equipe</a>
+  <a href="#link4">contato</a>
+</div>
+
+<title>Agendamento Concluído</title>
+</head>
+<body>
+  <h1>Agendamento Concluído</h1>
+  <p>O seu agendamento foi concluído com sucesso!</p>
+
+<div class="footer">
+  <p>Direitos do Site ©2023</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var menu = document.getElementById("menu");
+var sticky = menu.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+menu.classList.add("sticky")
+} else {
+menu.classList.remove("sticky");
+}
+}
+</script>
+
+</body>
+</html>

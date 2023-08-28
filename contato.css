@@ -1,0 +1,144 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  body {
+      margin: 0 auto; 
+      font-family: Arial, sans-serif;
+      background-color:#ff0000;
+    }
+    .header {
+      background-color: red;
+      color: white;
+      padding: 0px;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      
+    }
+    .sticky + .content {
+      padding-top: 60px;
+      background-color:#ff0000; /* vermelho claro */
+    }
+    .menu {
+      overflow: hidden;
+      background-color: #333;
+    }
+    .menu a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .menu a:hover {
+      background-color: #111;
+    }
+    .footer {
+      background-color: #333333;
+      color: white;
+      padding: 10px;
+    }
+    
+    /* Adicionando cores */
+    
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Responsividade */
+    input,
+    textarea,
+    select {
+        padding: 10px;
+    }
+
+    .btn-submit {
+        padding: 10px 15px;
+    }
+
+    .contact-info {
+        padding: 15px;
+    }
+}
+    
+    @media (max-width: 600px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+   * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+  

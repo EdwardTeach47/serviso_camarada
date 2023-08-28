@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços Camarada</title>
+  <link rel="stylesheet" type="text/css" href="serviço.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="./logo_img/Serviço_camarada.png" width="100%" height="100%">
+</div>
+
+<div class="menu" id="menu">
+    <a href="./pag_home.html">Home</a>
+    <a href="./serviço.html">Serviço</a>
+    <a href="./Equipe.html">Equipe</a>
+    <a href="./contato.html">contato</a>
+  </div>
+
+<header>
+    <h1>Serviços Disponíveis</h1>
+</header>
+
+<main>
+    <div class="service">
+        <h2>Instalação de Prateleiras e Armários</h2>
+        <button class="btn-schedule" onclick="openModal('Instalação de Prateleiras e Armários', 100)">Agendar</button>
+    </div>
+    <div class="service">
+        <h2>Conserto de Encanamento</h2>
+        <button class="btn-schedule" onclick="openModal('Conserto de Encanamento', 150)">Agendar</button>
+    </div>
+    <div class="service">
+        <h2>Pintura</h2>
+        <button class="btn-schedule" onclick="openModal('Pintura', 200)">Agendar</button>
+    </div>
+    <div class="service">
+        <h2>Montagem de Móveis</h2>
+        <button class="btn-schedule" onclick="openModal('Montagem de Móveis', 120)">Agendar</button>
+    </div>
+    <div class="service">
+        <h2>Reparo Geral</h2>
+        <button class="btn-schedule" onclick="openModal('Reparo Geral', 180)">Agendar</button>
+    </div>
+</div>
+    <!-- Adicione outras divs para os outros serviços -->
+</main>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Agendamento</h2>
+        <p>Selecione a data e horário para o serviço:</p>
+        <input type="date" id="date">
+        <input type="time" id="time">
+        <button class="btn-schedule" onclick="calculateTotal()">Calcular Total</button>
+        <p id="total-price">Total: R$ 0.00</p>
+        <button class="btn-schedule" onclick="closeModal()">Agendar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<div class="footer">
+  <p>Direitos do Site ©2023</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var menu = document.getElementById("menu");
+var sticky = menu.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+menu.classList.add("sticky")
+} else {
+menu.classList.remove("sticky");
+}
+}
+</script>
+
+</body>
+</html>

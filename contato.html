@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços Camarada</title>
+  <link rel="stylesheet" type="text/css" href="contato.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="./logo_img/Serviço_camarada.png" width="100%" height="100%">
+</div>
+
+<div class="menu" id="menu">
+  <a href="./pag_home.html">Home</a>
+  <a href="./serviço.html">Serviço</a>
+  <a href="./Equipe.html">Equipe</a>
+  <a href="./contato.html">contato</a>
+</div>
+
+<header>
+    <h1>Entre em Contato</h1>
+</header>
+
+<main>
+    <div class="contact-info">
+        <h2>Informações de Contato</h2>
+        <p><strong>Endereço:</strong> Rua da Empresa, 123 - Cidade, Estado</p>
+        <p><strong>Telefone:</strong> (12) 3456-7890</p>
+        <p><strong>Email:</strong> contato@empresa.com</p>
+    </div>
+    
+    <form id="contact-form" onsubmit="submitForm(event)">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="service">Serviço:</label>
+        <select id="service" required>
+            <option value="" disabled selected>Selecione um serviço</option>
+            <option value="Instalação de Prateleiras e Armários">Instalação de Prateleiras e Armários</option>
+            <option value="Conserto de Encanamento">Conserto de Encanamento</option>
+            <option value="Pintura">Pintura</option>
+            <option value="Montagem de Móveis">Montagem de Móveis</option>
+            <option value="Reparo Geral">Reparo Geral</option>
+        </select>
+        
+        <label for="message">Mensagem:</label>
+        <textarea id="message" required></textarea>
+        
+        <button type="submit" class="btn-submit">Enviar</button>
+    </form>
+</main>
+
+<script src="script2.js"></script>
+
+<div class="footer">
+  <p>Direitos do Site ©2023</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var menu = document.getElementById("menu");
+var sticky = menu.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+menu.classList.add("sticky")
+} else {
+menu.classList.remove("sticky");
+}
+}
+</script>
+
+</body>
+</html>
